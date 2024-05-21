@@ -1,6 +1,8 @@
 ### o/
 
-I mainly program in Python, but i am planning to learn Rust, Typescript, C++/C# and GDScript
+I mainly program in Python, also capable in lua/luau.
+Planning to learn Rust, Typescript, C++/C# and GDScript
+
 
 You can contact me at [peebly+ghcontact@salamithecat.com](mailto:peebly+ghcontact@salamithecat.com)
 although i don't check my email too often, so you're better off getting to me on [Discord](https://discord.com/users/904032786854346795).
