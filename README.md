@@ -1,6 +1,7 @@
 ### o/
 
-# ‼️ I use github for source control & collaboration not as a portfolio, the repositories i have put the most work into are private or local only.
+## ‼️ I use github for source control & collaboration not as a portfolio.
+The repositories i have put the most work into are private or local only.
 Any empty or seemingly abandonded projects on this account are likely not abandonded, or empty, they're just only on my local machine lol.
 
 I mainly program in Python, also capable in Lua/Luau.
