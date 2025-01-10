@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peeblyweeb</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-color: rgb(0,0,0,0.9);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        background-size: cover;
+        background-blend-mode: darken;
+        backdrop-filter: blur(4px) grayscale(100%);
+    }
+    .sub {
+        font-size: small;
+        color: rgb(80, 80, 80);
+    }
+    a {
+        color: gray;
+    }
+    div.wrapper {
+        width: 40%;
+        height: 50%;
+    }
+    div.head {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <h1>peeblyweeb</h1>
+            <nav>
+                <a href="https://discord.com/users/904032786854346795">talk</a>
+            </nav>
+        </div>
+        <p>i dabble in technology albeit lazily. as for games? mainly <a href="https://osu.ppy.sh/">osu!</a></p>
+        <p class="sub">backgrounds randomly sourced from osu art contests.</p>
+    </div>
+</body>
+<script>
+    fetch("https://corsproxy.io/?url=https://osu.ppy.sh/api/v2/seasonal-backgrounds")
+        .then(res => res.json())
+        .then(data => data.backgrounds.map(background => background.url))
+        .then(background_urls => {
+            document.body.style.backgroundImage = `url(${background_urls[Math.floor(Math.random() * background_urls.length)]})`
+        })
+</script>
+</html>
