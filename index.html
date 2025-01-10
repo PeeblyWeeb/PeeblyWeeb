@@ -8,7 +8,7 @@
 <style>
     body {
         margin: 0;
-        background-color: rgb(0,0,0,0.9);
+        background-color: rgb(0,0,0,1);
         color: white;
         display: flex;
         align-items: center;
@@ -35,8 +35,41 @@
         align-items: center;
         gap: 1rem;
     }
+    div.background {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        animation: cycle 10s forwards infinite;
+        background-color: rgb(0,0,0,0.9);
+        background-blend-mode: darken;
+        background-size: cover;
+        filter: blur(4px) grayscale(100%);
+    }
+
+    @keyframes cycle {
+        0% {
+            transform: scale(1);
+            opacity: 0;
+        }
+        5% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 1;
+        }
+        90% {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1.08);
+            opacity: 0;
+        }
+    }
 </style>
 <body>
+    <div class="background" id="bg"></div>
     <div class="wrapper">
         <div class="head">
             <h1>peeblyweeb</h1>
@@ -49,11 +82,22 @@
     </div>
 </body>
 <script>
+    let sources = null
+    const backgroundElement = document.getElementById("bg")
+    const ImageSourcesReadyEvent = new CustomEvent("image-sources-ready")
+    document.addEventListener("image-sources-ready", function() {
+        setInterval(function() {
+            backgroundElement.style.backgroundImage = `url(${sources[Math.floor(Math.random() * sources.length)]})`
+        }, 10000)
+    })
+
     fetch("https://corsproxy.io/?url=https://osu.ppy.sh/api/v2/seasonal-backgrounds")
         .then(res => res.json())
         .then(data => data.backgrounds.map(background => background.url))
         .then(background_urls => {
-            document.body.style.backgroundImage = `url(${background_urls[Math.floor(Math.random() * background_urls.length)]})`
+            sources = background_urls
+            document.dispatchEvent(ImageSourcesReadyEvent)
+            backgroundElement.style.backgroundImage = `url(${background_urls[Math.floor(Math.random() * background_urls.length)]})`
         })
 </script>
 </html>
