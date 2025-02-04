@@ -16,6 +16,7 @@
         justify-content: center;
         width: 100dvw;
         height: 100dvh;
+        gap: 8rem;
         overflow: hidden;
         font-family: "Radio Canada Big";
     }
@@ -66,6 +67,16 @@
         background-position: center;
     }
 
+    img {
+        width: 100%;
+        height: auto;
+        filter: grayscale();
+        transition: filter 250ms;
+        &:hover {
+            filter: none;
+        }
+    }
+
     input {
         width: 100%;
         height: 2rem;
@@ -106,6 +117,10 @@
 </style>
 <body>
     <div class="background" id="bg"></div>
+    <div style="display: block">
+        <img style="width: 30rem; "src="/salami_01.jpg" alt="">
+        <p class="sub">(hover picture to show color)</p>
+    </div>
     <div class="wrapper">
         <div class="head">
             <h1>hi, o/</h1>
@@ -115,7 +130,6 @@
         <form id="google-search-form">
             <input class="google-search" id="google-search" type="text" placeholder="Search Google"></input>
         </form>
-        <p class="sub">this page now technically doubles as a new tab page, so have fun!</p>
     </div>
 </body>
 <script>
