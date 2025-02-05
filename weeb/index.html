@@ -31,11 +31,16 @@
         color: darkgray;
     }
 
+    @media only screen and (min-width: 601px) {
+        .cat-b {
+            display: none !important;
+        }
+    }
     @media only screen and (max-width: 600px) {
         div.wrapper {
-            padding-inline: 4rem;
-            width: 100dvw !important;
-            height: 100dvh;
+            /* padding-inline: 4rem; */
+            width: 90%;
+            /* height: 100dvh; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -44,11 +49,34 @@
         p:nth-child(1) {
             justify-self: flex-end;
         }
+        .cat-a {
+            display: none !important;
+        }
+        .cat-b > p {
+            display: flex !important;
+            width: 100%;
+            align-items: center;
+        }
+        form {
+            width: 100%;
+        }
+        body {
+            flex-direction: column;
+            overflow: hidden;
+            text-align: center;
+            width: 95%;
+            padding-left: 2.5%;
+            gap: 8rem;
+        }
+        img {
+            width: 15rem !important;
+            filter: none !important;
+        }
     }
-    div.wrapper {
+    /* div.wrapper {
         width: 40%;
         height: 50%;
-    }
+    } */
     div.head {
         display: flex;
         align-items: center;
@@ -86,6 +114,7 @@
         padding-inline: 0.75rem;
         color: white;
         transition: border-color 100ms;
+        box-sizing: border-box;
         &:focus {
             border-color: rgb(50, 118, 195) !important;
         }
@@ -117,7 +146,7 @@
 </style>
 <body>
     <div class="background" id="bg"></div>
-    <div style="display: block">
+    <div class="cat-a" style="display: flex; align-items: center; flex-direction: column;">
         <img style="width: 30rem; "src="/salami_01.jpg" alt="">
         <p class="sub">(hover picture to show color)</p>
     </div>
@@ -130,6 +159,9 @@
         <form id="google-search-form">
             <input class="google-search" id="google-search" type="text" placeholder="Search Google"></input>
         </form>
+    </div>
+    <div class="cat-b" style="display: flex; align-items: center; flex-direction: column; flex-shrink: 1;">
+        <img src="/salami_01.jpg" alt="">
     </div>
 </body>
 <script>
