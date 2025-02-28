@@ -1,4 +1,5 @@
 I write in python, lua & javascript.
+I occasionally do web development, recently in svelte.
 
 Contact me:
 - [Discord (peeblyweeb)](https://discord.com/users/904032786854346795)
