@@ -2,6 +2,7 @@ I write in python, lua & javascript.
 I occasionally do web development, recently in svelte.
 
 I like to write Discord bots a lot, if you want one, feel free to ask.
+
 ..or if you'd like access to my private one, shoot me a dm and i'll probably give you an invite link
 
 Contact me:
