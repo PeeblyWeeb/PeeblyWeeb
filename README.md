@@ -10,3 +10,7 @@ Contact me:
 - [Email (peebly+ghcontact@salamithecat.com)](mailto:peebly+ghcontact@salamithecat.com) - I don't check my emails often, consider using Discord instead.
 
 I'm free to collaborate on any projects, as long as they sound fun.
+
+
+also an osu! player
+![a](https://osekai.net/profiles/img/banner.svg?id=34631091)
