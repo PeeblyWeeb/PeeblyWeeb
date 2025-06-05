@@ -86,12 +86,49 @@
             opacity: 0;
         }
     }
+
+    @keyframes subtlePulse {
+        0%, 100% {
+            transform: rotate(-20deg) scale(1);
+        }
+        50% {
+            transform: rotate(-20deg) scale(1.05);
+        }
+    }
+
+    .title-container {
+        position: relative;
+        display: inline-block; /* keep it tight to content */
+        margin-right: 4rem;
+    }
+
+    .minecraft-splash-effect {
+        /* font-family: "Minecraft"; */
+        opacity: 0.4;
+        font-size: 1rem;
+        font-weight: bold;
+        transform: rotate(-20deg);
+        position: absolute;
+        top: 3.2em;
+        right: -3em;
+        /* text-shadow:
+            -1px -1px 0 #3a3a3a,
+            1px -1px 0 #3a3a3a,
+            -1px  1px 0 #3a3a3a,
+            1px  1px 0 #3a3a3a; */
+        white-space: nowrap;
+        animation: subtlePulse 0.5s infinite ease-in-out;
+    }
 </style>
 <body>
     <div class="background" id="bg"></div>
     <div class="wrapper">
         <div class="head">
-            <h1>peeblyweeb</h1>
+            <div class="title-container">
+                <h1>peeblyweeb</h1>
+                <div class="minecraft-splash-effect">Also meet <a href="https://ripples.gay">ripley</a>!</div>
+            </div>
+            
             <nav>
                 <a href="https://discord.com/users/904032786854346795">talk</a>
             </nav>
