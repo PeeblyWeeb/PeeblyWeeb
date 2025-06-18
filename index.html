@@ -47,6 +47,7 @@
     div.wrapper {
         width: 40%;
         height: 50%;
+        max-width: 650px;
     }
     div.head {
         display: flex;
@@ -119,6 +120,11 @@
         white-space: nowrap;
         animation: subtlePulse 0.5s infinite ease-in-out;
     }
+
+    nav {
+        display: flex;
+        gap: 10px;
+    }
 </style>
 <body>
     <div class="background" id="bg"></div>
@@ -126,14 +132,22 @@
         <div class="head">
             <div class="title-container">
                 <h1>peeblyweeb</h1>
-                <div class="minecraft-splash-effect">Also meet <a href="https://ripples.gay">ripley</a>!</div>
+                <div class="minecraft-splash-effect">
+                    Also meet 
+                    <a href="https://ripples.gay">ripley</a>!
+                </div>
             </div>
             
             <nav>
                 <a href="https://discord.com/users/904032786854346795">talk</a>
+                <a href="https://github.com/peeblyweeb">git</a>
             </nav>
         </div>
-        <p>i dabble in technology albeit lazily. as for games? mainly <a href="https://osu.ppy.sh/">osu!</a></p>
+        <p>
+            i dabble in technology. as for games? mainly
+            <a href="https://osu.ppy.sh/">osu!</a>
+            <a href="https://osu.ppy.sh/users/34631091" class="sub">(check me out!)</a>
+        </p>
         <p class="sub">backgrounds randomly sourced from osu art contests.</p>
     </div>
 </body>
