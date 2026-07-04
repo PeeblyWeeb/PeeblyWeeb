@@ -1,9 +1,25 @@
-I write in python, lua & javascript and I occasionally do web development, recently in svelte.
+**I'm familiar with**:
+- Python, C#
 
-I keep most of my work private until I feel it is in a presentable or at the very least functional state, so you won't see too much here. If you're interested in seeing those projects, contact me with the details I've listed below.
+And capable of writing in:
+- Java, Typescript/Javascript, Lua/u
 
-Contact me, for any reason:
+While interested in learning:
+- C/C++, Rust(?)
+---
+
+**My code is mostly AI-free, when it isn't it is usually announced in a code comment**<br>
+<sub>it is still used for occasional research / guidance alongside traditional research</sub>
+
+---
+
+I prefer to write backend / developer facing systems rather than frontend, but I'm capable of doing both.
+
+I like to work privately, you won't see many massive projects public here unless I'm proud of them. If you're interested in seeing any of them, feel free to reach out about it.
+
+---
+
+Contact me, for any reason:<br>
+<sub>even for non-programming related inquiries!</sub>
 - [Discord (peeblyweeb)](https://discord.com/users/904032786854346795)
 - [Email (peebly+ghcontact@salamithecat.com)](mailto:peebly+ghcontact@salamithecat.com) - I don't check my emails often, consider using Discord instead.
-
-I'm free to collaborate on any projects, as long as they sound fun.
