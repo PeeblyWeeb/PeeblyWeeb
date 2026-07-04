@@ -1,4 +1,4 @@
-I'm familiar with:
+I'm familiar/fluent with:
 - Python, C#
 
 And capable of writing in:
